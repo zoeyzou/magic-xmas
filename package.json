@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "^16.0.11",
+    "dotenv": "^6.2.0",
+    "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-scripts": "2.1.2",
+    "request": "^2.88.0",
+    "typescript": "^3.2.2"
   },
   "scripts": {
     "start": "react-scripts start",

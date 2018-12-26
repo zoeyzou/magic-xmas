@@ -1,0 +1,30 @@
+:root {
+  --red: #ff0000;
+  --pink: #ff7878;
+  --white: #fff;
+  --light-green: #74d680;
+  --green: #378b29;
+  --font-title: 'Pacifico', cursive;
+  --font-body: 'Mali', cursive;
+
+  --horizontal-thickness: 2%;
+  --vertical-thickness: .5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, body > div {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+

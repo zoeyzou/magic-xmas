@@ -1,0 +1,33 @@
+.Display {
+  width: calc(100% - var(--vertical-thickness));
+  height: calc(100% - var(--horizontal-thickness));
+
+  background-image: url('../../assets/Christmas-Tree-in-Snow.jpg');
+  background-position: top;
+  background-size: cover;
+
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  overflow: hidden;
+
+  .Title {
+    width: 60%;
+    color: var(--white);
+    text-align: left;
+    position: absolute;
+    left: 5vw;
+    bottom: 5vh;
+  }
+
+  h1 {
+    font-size: calc(16px + 3vw);
+    text-shadow: 0 0 15px var(--white);
+  }
+
+  p {
+    font-size: calc(10px + 1vw);
+    text-shadow: 0 0 5px var(--white);
+  }
+}

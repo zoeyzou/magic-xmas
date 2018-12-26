@@ -1,0 +1,45 @@
+$horizontal-pattern: linear-gradient(135deg, #ff0000 25%, #378b29 25%, #378b29 50%, #ff0000 50%, #ff0000 75%, #378b29 75%, #378b29 100%);
+$vertical-pattern: linear-gradient(135deg, #ff0000 25%, #378b29 25%, #378b29 50%, #ff0000 50%, #ff0000 75%, #378b29 75%, #378b29 100%);
+
+.Frame {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  cursor: url('../../assets/magic-wand.svg'), auto;
+
+  .top, .bottom {
+    height: var(--horizontal-thickness);
+    width: 100%;
+    background-image: $horizontal-pattern;
+    background-size: 30px 30px;
+    z-index: 90;
+    position: absolute;
+  }
+
+  .left, .right {
+    height: 100%;
+    width: calc(var(--vertical-thickness) + 10px);
+    background-image: $vertical-pattern;
+    background-size: 30px 30px;
+    z-index: 90;
+    position: absolute;
+  }
+
+  .top {
+    top: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+
+  .bottom {
+    bottom: 0;
+  }
+
+  .left {
+    left: 0;
+  }
+
+}

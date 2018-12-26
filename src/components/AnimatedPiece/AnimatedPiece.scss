@@ -1,0 +1,32 @@
+.AnimatedPiece {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  animation: dropping 15s linear;
+
+  img {
+    width: 25px;
+    height: 25px;
+    filter: grayscale(1) invert(1);
+    animation: rotate 5s linear infinite;
+  }
+}
+
+@keyframes dropping {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 150vh);
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
